@@ -7,11 +7,20 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["src/responsivevoice.js", "src/app.js"]
+    "persistent": false,
+    "scripts": [ "src/responsivevoice.js", "src/events.js" ]
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.fr/*"],
+      "js": ["src/responsivevoice.js", "src/voice.js"]
+    }
+  ],
   "permissions": [
+    "activeTab",
     "unlimitedStorage",
-    "notifications"
+    "notifications",
+    "contextMenus"
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
