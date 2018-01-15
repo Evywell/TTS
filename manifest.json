@@ -6,6 +6,9 @@
   "browser_action": {
     "default_popup": "popup.html"
   },
+  "background": {
+    "scripts": ["src/responsivevoice.js", "src/app.js"]
+  },
   "permissions": [
     "unlimitedStorage",
     "notifications"
