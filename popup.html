@@ -5,7 +5,19 @@
     <title>TTS</title>
     <script src="./src/responsivevoice.js"></script>
     <script src="./src/app.js"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
 </head>
+<<<<<<< HEAD
 <body id="body">
 <input onclick='responsiveVoice.speak(test, "French Female");' type='button' value=' Play' />
 <p id="article">
@@ -29,5 +41,12 @@
     Le Corbeau honteux et confus
     Jura, mais un peu tard, qu’on ne l’y prendrait plus.
 </p>
+=======
+<body>
+    <div class="container">
+        <p>Appuyer sur Play pour jouer la page</p>
+        <button id="playBtn">Play</button>
+    </div>
+>>>>>>> cb36664ed936bc1c649860acd783fc6b5d6de31b
 </body>
 </html>
