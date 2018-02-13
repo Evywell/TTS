@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./src/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./src/responsivevoice.js"></script>
+    <script src="./src/utils.js"></script>
     <script src="./src/app.js"></script>
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 200px;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <p>Appuyer sur Play pour jouer la page</p>
-        <button id="playBtn">Play</button>
+        <h1>Tell Me</h1>
+        <section>
+            <button id="playBtn" class="btn btn-large uppercase">Jouer la page <!--<i class="material-icons">&#xE023;</i>--></button>
+        </section>
+        <div class="separate"></div>
+        <section>
+            <div class="left">
+                <button class="btn btn-nopad black" id="toggleText">
+                    <i class="material-icons icon-large">&#xE8D2;</i>
+                </button>
+            </div>
+            <div class="right">
+                <button class="btn" id="font-up">A+</button>
+                <button class="btn" id="font-down">A-</button>
+            </div>
+        </section>
     </div>
+    <footer>
+        Developed by DANA&copy;
+    </footer>
 </body>
 </html>

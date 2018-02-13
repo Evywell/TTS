@@ -1,0 +1,86 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bookman Old Style', 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    font-family: 'Roboto';
+    background: none;
+    border: none;
+}
+
+.container {
+    width: 400px;
+    height: 150px;
+    padding: 15px;
+}
+
+section {
+    padding: 10px 0;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e0e0e0;
+}
+
+.btn i {
+    vertical-align: middle;
+}
+
+i.icon-large {
+    font-size: 2rem;
+}
+
+.btn-large {
+    width: 100%;
+}
+
+.btn-nopad {
+    padding: 0;
+}
+
+.black {
+    color: #FFF;
+    background: #000;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.separate {
+    width: 100%;
+    background: #585858;
+    height: 1px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+footer {
+    font-size: 0.7rem;
+    padding: 10px 10px 5px 10px;
+}
