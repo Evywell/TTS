@@ -1,7 +1,7 @@
 var regex_20minutes = /(20minutes\.fr)/i;
 function cleanHTML20Minutes(dom) {
     var twitter = dom.querySelector('twitterwidget');
-    if (twitter !== undefined) {
+    if (twitter !== null) {
         twitter.remove();
     }
     dom.querySelector('.tags').remove();
