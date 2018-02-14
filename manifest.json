@@ -14,7 +14,8 @@
   "commands": {
     "ear_the_page": {
       "suggested_key": {
-        "default": "Ctrl+Shift+F"
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
       },
       "description": "Joue la page"
     }
