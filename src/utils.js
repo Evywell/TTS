@@ -1,6 +1,9 @@
 var regex_20minutes = /(20minutes\.fr)/i;
 function cleanHTML20Minutes(dom) {
-    dom.querySelector('twitterwidget').remove();
+    var twitter = dom.querySelector('twitterwidget');
+    if (twitter !== undefined) {
+        twitter.remove();
+    }
     dom.querySelector('.tags').remove();
     dom.querySelector('.sharebar').remove();
     var scripts = dom.querySelectorAll('script');
@@ -14,7 +17,7 @@ function cleanHTML(dom, website) {
             return cleanHTML20Minutes(dom);
             break;
         default:
-            console.log(dom.querySelector('body').innerText);
+            // console.log(dom.querySelector('body').innerText);
             return dom.querySelector('body').innerText;
     }
 }

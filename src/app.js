@@ -46,7 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 chrome.tabs.executeScript(tab.id, {code: "document.querySelector('" + selector + "').innerHTML;"}, function(response) {
                     var doc = parser.parseFromString(response, "text/html");
                     var result = cleanHTML(doc, website);
-                    responsiveVoice.speak(result);
+                    if (result === "" || result === null) {
+                        responsiveVoice.speak("Désolé, je ne peux pas lire cette page. Elle ne suit pas les normes liés aux personnes mal-voyantes");
+                    } else {
+                        responsiveVoice.speak(result);
+                    }
                 });
             });
         })
