@@ -45,7 +45,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 function readAll(tab) {
     responsiveVoice.setDefaultVoice("French Female");
     var url = tab.url;
-    var website, selector = 'article';
+    var website, selector = 'body';
     var parser = new DOMParser();
     if (url.match(regex_20minutes)) {
         selector = ".lt-endor-body.content";

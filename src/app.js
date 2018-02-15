@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         playBtn.addEventListener('click', function () {
             responsiveVoice.setDefaultVoice("French Female");
             chrome.tabs.getSelected(null, function(tab){
-                chrome.tabs.executeScript(tab.id, {code: "document.querySelector('" + selector + "').innerHTML;"}, function(response) {
+                var code = "document.querySelector('" + selector + "').innerHTML;"
+
+                chrome.tabs.executeScript(tab.id, {code: code}, function(response) {
                     var doc = parser.parseFromString(response, "text/html");
                     var result = cleanHTML(doc, website);
                     if (result === "" || result === null) {
